@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Team - UWEC CSSA</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="team">
+    <!-- ===== Header & Navigation ===== -->
+    <header>
+        <div class="header-container">
+            <div class="logo">🏛️ CSSA</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" data-translate="home">Home</a></li>
+                    <li><a href="about.html" data-translate="aboutUs">About Us</a></li>
+                    <li><a href="events.html" data-translate="events">Events</a></li>
+                    <li><a href="new-students.html" data-translate="newStudents">New Students</a></li>
+                    <li><a href="team.html" data-translate="ourTeam">Our Team</a></li>
+                    <li><a href="contact.html" data-translate="contact">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="language-toggle" id="languageBtn" onclick="toggleLanguage()">中文</button>
+        </div>
+    </header>
+
+    <!-- ===== Main Content ===== -->
+    <main>
+        <section class="hero">
+            <h1 data-translate="ourTeamTitle">Meet Our Team</h1>
+            <p>Get to know the dedicated members who lead and organize CSSA!</p>
+        </section>
+
+        <section>
+            <h2>Executive Board</h2>
+            <div class="team-grid" id="teamContainer">
+                <!-- Team members will be dynamically inserted here -->
+            </div>
+        </section>
+
+        <section style="background: var(--light-bg); padding: 2rem; border-radius: 8px;">
+            <h2>Interested in Joining the Board?</h2>
+            <p style="margin-bottom: 1rem;">
+                We're always looking for enthusiastic students who want to help organize events and support the community.
+                Elections are held at the end of each academic year!
+            </p>
+            <a href="contact.html" class="btn" data-translate="contact">Contact Us</a>
+        </section>
+
+        <section>
+            <h2>Volunteering Opportunities</h2>
+            <div class="card-container">
+                <div class="card">
+                    <h3>🎉 Event Planning</h3>
+                    <p>
+                        Help plan and execute our cultural events and celebrations. No experience necessary!
+                    </p>
+                </div>
+                <div class="card">
+                    <h3>📱 Social Media</h3>
+                    <p>
+                        Help manage our social media accounts and keep the community updated on events.
+                    </p>
+                </div>
+                <div class="card">
+                    <h3>🤝 Mentoring</h3>
+                    <p>
+                        Mentor incoming students and help them adjust to life at UWEC.
+                    </p>
+                </div>
+                <div class="card">
+                    <h3>💬 Communication</h3>
+                    <p>
+                        Help translate documents or assist with communication between CSSA and campus.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ===== Footer ===== -->
+    <footer>
+        <div class="footer-content">
+            <p data-translate="footerText">© 2024 UWEC Chinese Student & Scholar Association. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="about.html" data-translate="aboutUs">About</a>
+                <a href="contact.html" data-translate="contact">Contact</a>
+                <a href="mailto:cssa@uwec.edu">Email: cssa@uwec.edu</a>
+            </div>
+            <div class="social-links">
+                <a href="https://www.facebook.com/uweccssa" title="Facebook">f</a>
+                <a href="https://www.instagram.com/uweccssa" title="Instagram">📷</a>
+                <a href="https://www.wechat.com" title="WeChat">微</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

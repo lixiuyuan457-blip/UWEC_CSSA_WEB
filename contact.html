@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact & Join Us - UWEC CSSA</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="contact">
+    <!-- ===== Header & Navigation ===== -->
+    <header>
+        <div class="header-container">
+            <div class="logo">🏛️ CSSA</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" data-translate="home">Home</a></li>
+                    <li><a href="about.html" data-translate="aboutUs">About Us</a></li>
+                    <li><a href="events.html" data-translate="events">Events</a></li>
+                    <li><a href="new-students.html" data-translate="newStudents">New Students</a></li>
+                    <li><a href="team.html" data-translate="ourTeam">Our Team</a></li>
+                    <li><a href="contact.html" data-translate="contact">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="language-toggle" id="languageBtn" onclick="toggleLanguage()">中文</button>
+        </div>
+    </header>
+
+    <!-- ===== Main Content ===== -->
+    <main>
+        <section class="hero">
+            <h1 data-translate="contactTitle">Contact & Join Us</h1>
+            <p>We'd love to hear from you! Reach out to learn more about CSSA or to join our community.</p>
+        </section>
+
+        <section>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+                <!-- Contact Information -->
+                <div>
+                    <h2 data-translate="getInTouch">Get In Touch</h2>
+                    <div style="margin-top: 2rem;">
+                        <h3>📧 <span data-translate="email">Email</span></h3>
+                        <p>
+                            <strong>General:</strong> cssa@uwec.edu<br>
+                            <strong>President:</strong> zhang.wei@uwec.edu<br>
+                            <strong>Events:</strong> cssa.events@uwec.edu
+                        </p>
+
+                        <h3 style="margin-top: 1.5rem;">📞 <span data-translate="phone">Phone</span></h3>
+                        <p>(715) 836-CSSA (2772)</p>
+
+                        <h3 style="margin-top: 1.5rem;">📍 Location</h3>
+                        <p>
+                            Student Center, Room 102<br>
+                            University of Wisconsin–Eau Claire<br>
+                            Eau Claire, WI 54701, USA
+                        </p>
+
+                        <h3 style="margin-top: 1.5rem;" data-translate="followUs">Follow Us</h3>
+                        <div class="social-links" style="justify-content: flex-start; gap: 1rem;">
+                            <a href="https://www.facebook.com/uweccssa" title="Facebook" style="width: auto; padding: 0.5rem 1rem;">Facebook</a>
+                            <a href="https://www.instagram.com/uweccssa" title="Instagram" style="width: auto; padding: 0.5rem 1rem;">Instagram</a>
+                            <a href="https://www.wechat.com" title="WeChat" style="width: auto; padding: 0.5rem 1rem;">WeChat</a>
+                        </div>
+
+                        <h3 style="margin-top: 1.5rem;">🕐 Office Hours</h3>
+                        <p>
+                            Monday - Friday: 3:00 PM - 5:00 PM<br>
+                            Saturday: 1:00 PM - 3:00 PM<br>
+                            By appointment on other days
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Join Form -->
+                <div>
+                    <h2 data-translate="joinForm">Join CSSA</h2>
+                    <form id="contactForm" style="margin-top: 1rem;">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName" data-translate="firstName">First Name</label>
+                                <input type="text" id="firstName" name="firstName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName" data-translate="lastName">Last Name</label>
+                                <input type="text" id="lastName" name="lastName" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="emailAddress" data-translate="emailAddress">Email Address</label>
+                            <input type="email" id="emailAddress" name="emailAddress" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone" data-translate="phone_label">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="major" data-translate="major">Major / Program</label>
+                                <input type="text" id="major" name="major">
+                            </div>
+                            <div class="form-group">
+                                <label for="year" data-translate="year">Year</label>
+                                <select id="year" name="year">
+                                    <option value="">Select Year</option>
+                                    <option value="freshman">Freshman</option>
+                                    <option value="sophomore">Sophomore</option>
+                                    <option value="junior">Junior</option>
+                                    <option value="senior">Senior</option>
+                                    <option value="graduate">Graduate</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message" data-translate="message">Message</label>
+                            <textarea id="message" name="message" placeholder="Tell us about yourself, your interests, or any questions you have..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn" data-translate="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Responsive adjustment for mobile -->
+            <style>
+                @media (max-width: 768px) {
+                    div:has(> .form-row) {
+                        display: block !important;
+                    }
+                }
+            </style>
+        </section>
+
+        <section style="background: var(--light-bg); padding: 2rem; border-radius: 8px; text-align: center;">
+            <h2>Questions About Membership?</h2>
+            <p>
+                Membership is FREE and open to all UWEC students interested in Chinese culture and community!
+            </p>
+            <ul style="text-align: left; max-width: 500px; margin: 1rem auto;">
+                <li>✓ No membership fees</li>
+                <li>✓ Open to students of all backgrounds</li>
+                <li>✓ Flexible participation - join as many or few events as you'd like</li>
+                <li>✓ Great way to make new friends and support each other</li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- ===== Footer ===== -->
+    <footer>
+        <div class="footer-content">
+            <p data-translate="footerText">© 2024 UWEC Chinese Student & Scholar Association. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="about.html" data-translate="aboutUs">About</a>
+                <a href="contact.html" data-translate="contact">Contact</a>
+                <a href="mailto:cssa@uwec.edu">Email: cssa@uwec.edu</a>
+            </div>
+            <div class="social-links">
+                <a href="https://www.facebook.com/uweccssa" title="Facebook">f</a>
+                <a href="https://www.instagram.com/uweccssa" title="Instagram">📷</a>
+                <a href="https://www.wechat.com" title="WeChat">微</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
